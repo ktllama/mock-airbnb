@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  /*logo is now a flex item and will stay within its boundaries*/
+  padding: 20px 36px; /*top/bottom and left/right*/
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+/*when designed in figma you can look at the css properties of the design*/
+
+/*safari bug so we will style just the logo with max with*/
+.nav--logo {
+  max-width: 100px;
+}
+
+/*if youre going to use different sections give them all the same basic styling*/
+
+section {
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.photogrid {
+  max-width: 500px;
+  align-self: center; /*how to align an item within itself in flex box*/
+}
+
+.hero-header {
+  margin-bottom: 16px;
+}
+
+.hero-text{
+  margin-top: 0;
 }
